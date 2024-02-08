@@ -1,0 +1,186 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: whitesmoke;
+}
+
+.container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 50px 20px 30px;
+    border-radius: 20px;
+}
+
+.help{
+    margin-bottom: 20px;
+    color: blue;
+    font-size: 2rem;
+    font-weight: bolder;
+    margin-bottom: 100px;
+    text-align: center;
+    position: relative;
+}
+
+.help .help-assist{
+    color:cadetblue;
+    margin-top: 20px;
+    background-color:azure;
+    border-radius: 10px;
+    padding: 10px;
+    display: none;
+    text-align: center;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 12px;
+}
+
+.help:hover{
+    color: cadetblue;
+}
+
+.help:hover .help-assist{
+    display: block;
+}
+
+.container .title{
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    opacity: 50%;
+    font-size: 30px;
+}
+
+.container .title-2{
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: bold;
+    color:dimgray;
+    font-size: 25px;
+}
+
+.paragraph{
+    font-family:Arial, Helvetica, sans-serif;
+    opacity: 50%;
+    text-align: center;
+    font-size: 14px;
+    margin: 30px 0 70px;
+    max-width: 500px;
+    word-wrap: break-word;
+}
+
+
+.card-container{
+    display: flex;
+    gap: 20px;
+}
+
+.card-page{
+    display: flex;
+    flex-direction: column;
+    background-color: white;
+    border-radius: 7px;
+    padding: 30px;    
+}
+
+.card-page .card{
+    font-weight: bold;
+    font-size: 24px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    opacity: 75%;
+}
+
+.card-page .card-para{
+    padding: 10px 0 40px 0;
+    opacity: 50%;
+    font-size: 16px;
+    max-width: 300px;
+    word-wrap: break-word;
+}
+
+.card-page .icon{
+    display: flex;
+    align-items: end;
+    justify-content: end;
+}
+
+.card-container .card-container-two{
+    display: grid;
+    gap: 10px;
+}
+
+.card-container .calculator,
+.card-container .supervisor{
+    border-top: 4px solid lightblue;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.card-container .teambuilder{
+    border-top: 4px solid red;
+}
+
+
+.card-container .karma{
+    border-top: 4px solid lightsalmon;
+}
+
+
+
+footer{
+    margin: 50px 0;
+    text-decoration: none;
+}
+
+
+@media (max-width: 760px) {
+    .help-assist{
+        text-align: left;
+    }
+    .container .title{
+        display: grid;
+        grid-template-columns: 1fr;
+        text-align: center;
+    }
+
+    .container .title-2{
+        display: grid;
+        grid-template-columns: 1fr;
+        text-align: center;
+    }
+    .container .paragraph{
+        display: inline;
+        text-wrap: wrap;
+        text-align: center;
+    }
+    .card-container{
+        display: grid;
+        grid-template-columns: 1fr;
+    }
+}
+
+
+@media (max-width: 375px) {
+    .container .title{
+        display: grid;
+        grid-template-columns: 1fr;
+        text-align: center;
+    }
+
+    .container .title-2{
+        display: grid;
+        grid-template-columns: 1fr;
+        text-align: center;
+    }
+    .container .paragraph{
+        display: inline;
+        text-wrap: wrap;
+        text-align: center;
+    }
+    .card-container{
+        display: grid;
+        grid-template-columns: 1fr;
+    }
+}
